@@ -71,7 +71,15 @@ class LoginController: UIViewController {
     //MARK: - Selector
     
     @objc func handleLogin() {
-        print(123)
+        guard let email = emailTextField.text else {return}
+        guard let password = passwordTextField.text else {return}
+        AuthService.shared.logUserIn(withEmail: email, password: password) { result, error in
+            if let error = error {
+                print("error is \(error.localizedDescription)")
+                return
+            }
+       print("success log in")
+        }
     }
     
     @objc func handleShowSignUp() {
