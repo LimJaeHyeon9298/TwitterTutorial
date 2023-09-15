@@ -18,6 +18,8 @@
 		4680EFC22AB46BBB0035881B /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680EFC12AB46BBB0035881B /* NotificationsController.swift */; };
 		4680EFC42AB46BC90035881B /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680EFC32AB46BC90035881B /* ConversationsController.swift */; };
 		4680EFC62AB4746E0035881B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680EFC52AB4746E0035881B /* Extensions.swift */; };
+		4680EFC92AB47AE60035881B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680EFC82AB47AE60035881B /* LoginController.swift */; };
+		4680EFCB2AB47B430035881B /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680EFCA2AB47B430035881B /* RegistrationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		4680EFC12AB46BBB0035881B /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		4680EFC32AB46BC90035881B /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 		4680EFC52AB4746E0035881B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4680EFC82AB47AE60035881B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		4680EFCA2AB47B430035881B /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		4680EFB52AB469630035881B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4680EFC72AB47AD60035881B /* Authentication */,
 				4680EFBB2AB46A080035881B /* MainTabController.swift */,
 				4680EFBD2AB46B6C0035881B /* FeedController.swift */,
 				4680EFBF2AB46BB20035881B /* ExploreController.swift */,
@@ -128,6 +133,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4680EFC72AB47AD60035881B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4680EFC82AB47AE60035881B /* LoginController.swift */,
+				4680EFCA2AB47B430035881B /* RegistrationController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,9 +219,11 @@
 				4680EFC42AB46BC90035881B /* ConversationsController.swift in Sources */,
 				4680EFA02AB4692B0035881B /* AppDelegate.swift in Sources */,
 				4680EFC62AB4746E0035881B /* Extensions.swift in Sources */,
+				4680EFC92AB47AE60035881B /* LoginController.swift in Sources */,
 				4680EFC02AB46BB20035881B /* ExploreController.swift in Sources */,
 				4680EFA22AB4692B0035881B /* SceneDelegate.swift in Sources */,
 				4680EFBC2AB46A080035881B /* MainTabController.swift in Sources */,
+				4680EFCB2AB47B430035881B /* RegistrationController.swift in Sources */,
 				4680EFBE2AB46B6C0035881B /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
