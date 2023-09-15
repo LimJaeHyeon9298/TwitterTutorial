@@ -20,6 +20,7 @@
 		4680EFC62AB4746E0035881B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680EFC52AB4746E0035881B /* Extensions.swift */; };
 		4680EFC92AB47AE60035881B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680EFC82AB47AE60035881B /* LoginController.swift */; };
 		4680EFCB2AB47B430035881B /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680EFCA2AB47B430035881B /* RegistrationController.swift */; };
+		4680EFCD2AB483970035881B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680EFCC2AB483970035881B /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		4680EFC52AB4746E0035881B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4680EFC82AB47AE60035881B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		4680EFCA2AB47B430035881B /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		4680EFCC2AB483970035881B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				4680EFC52AB4746E0035881B /* Extensions.swift */,
+				4680EFCC2AB483970035881B /* Utilities.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				4680EFC22AB46BBB0035881B /* NotificationsController.swift in Sources */,
 				4680EFC42AB46BC90035881B /* ConversationsController.swift in Sources */,
+				4680EFCD2AB483970035881B /* Utilities.swift in Sources */,
 				4680EFA02AB4692B0035881B /* AppDelegate.swift in Sources */,
 				4680EFC62AB4746E0035881B /* Extensions.swift in Sources */,
 				4680EFC92AB47AE60035881B /* LoginController.swift in Sources */,
