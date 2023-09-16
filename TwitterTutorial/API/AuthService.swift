@@ -52,6 +52,7 @@ struct AuthService {
                    
                     REF_USERS.child(uid).updateChildValues(values, withCompletionBlock: completion)
                    
+                   
                   
                     
                 }
