@@ -48,6 +48,7 @@ class UploadTweetController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+       
         
     }
     
@@ -73,8 +74,8 @@ class UploadTweetController: UIViewController {
     //MARK: - Helpers
     func configureUI() {
         view.backgroundColor = .white
-        
         configNavigationBar()
+       
         view.addSubview(profileImageVIew)
         profileImageVIew.anchor(top: view.safeAreaLayoutGuide.topAnchor,left: view.leftAnchor,paddingTop: 16,paddingLeft: 16)
         profileImageVIew.sd_setImage(with: user.profileImageUrl)
@@ -91,7 +92,7 @@ class UploadTweetController: UIViewController {
     func configNavigationBar() {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor.systemBackground
+        appearance.backgroundColor = UIColor.white
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         
