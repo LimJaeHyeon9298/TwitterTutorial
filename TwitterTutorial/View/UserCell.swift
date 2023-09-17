@@ -44,6 +44,7 @@ class UserCell : UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = .white
+        selectionStyle = .none
         addSubview(profileImageVIew)
         profileImageVIew.centerY(inView: self,leftAnchor: leftAnchor,paddingLeft: 12)
         
