@@ -64,8 +64,4 @@ struct ProfileHeaderViewModel {
     }
     
     
-    
-    
-    
-    
 }

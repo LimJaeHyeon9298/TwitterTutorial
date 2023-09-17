@@ -39,6 +39,8 @@
 		4680EFEB2AB5C81E0035881B /* ProfileFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680EFEA2AB5C81E0035881B /* ProfileFilterCell.swift */; };
 		4680EFED2AB5D24E0035881B /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680EFEC2AB5D24D0035881B /* ProfileHeaderViewModel.swift */; };
 		4680EFEF2AB6F4680035881B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680EFEE2AB6F4680035881B /* UserCell.swift */; };
+		469738732AB74DF400E5A739 /* TweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469738722AB74DF400E5A739 /* TweetController.swift */; };
+		469738752AB74FF800E5A739 /* TweetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469738742AB74FF800E5A739 /* TweetHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,8 @@
 		4680EFEA2AB5C81E0035881B /* ProfileFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFilterCell.swift; sourceTree = "<group>"; };
 		4680EFEC2AB5D24D0035881B /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		4680EFEE2AB6F4680035881B /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		469738722AB74DF400E5A739 /* TweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetController.swift; sourceTree = "<group>"; };
+		469738742AB74FF800E5A739 /* TweetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetHeader.swift; sourceTree = "<group>"; };
 		659914BFBEFC57BD0821E5D4 /* Pods_TwitterTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5CF6CDE9EC5F89997F8507 /* Pods-TwitterTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterTutorial.debug.xcconfig"; path = "Target Support Files/Pods-TwitterTutorial/Pods-TwitterTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		E051A5BCBED8521CABFBD8EA /* Pods-TwitterTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterTutorial.release.xcconfig"; path = "Target Support Files/Pods-TwitterTutorial/Pods-TwitterTutorial.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 				4680EFC32AB46BC90035881B /* ConversationsController.swift */,
 				4680EFD82AB5226A0035881B /* UploadTweetController.swift */,
 				4680EFE42AB5A4360035881B /* ProfileController.swift */,
+				469738722AB74DF400E5A739 /* TweetController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				4680EFE82AB5C50E0035881B /* ProfileFilterView.swift */,
 				4680EFEA2AB5C81E0035881B /* ProfileFilterCell.swift */,
 				4680EFEE2AB6F4680035881B /* UserCell.swift */,
+				469738742AB74FF800E5A739 /* TweetHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -347,6 +353,7 @@
 				4680EFCD2AB483970035881B /* Utilities.swift in Sources */,
 				4680EFA02AB4692B0035881B /* AppDelegate.swift in Sources */,
 				4680EFC62AB4746E0035881B /* Extensions.swift in Sources */,
+				469738732AB74DF400E5A739 /* TweetController.swift in Sources */,
 				4680EFE52AB5A4360035881B /* ProfileController.swift in Sources */,
 				4680EFE72AB5A9BF0035881B /* ProfileHeader.swift in Sources */,
 				4680EFE12AB55E020035881B /* TweetCell.swift in Sources */,
@@ -358,6 +365,7 @@
 				4680EFC02AB46BB20035881B /* ExploreController.swift in Sources */,
 				4680EFA22AB4692B0035881B /* SceneDelegate.swift in Sources */,
 				4680EFBC2AB46A080035881B /* MainTabController.swift in Sources */,
+				469738752AB74FF800E5A739 /* TweetHeader.swift in Sources */,
 				4680EFE32AB58F110035881B /* TweetViewModel.swift in Sources */,
 				4680EFCB2AB47B430035881B /* RegistrationController.swift in Sources */,
 				4680EFBE2AB46B6C0035881B /* FeedController.swift in Sources */,
