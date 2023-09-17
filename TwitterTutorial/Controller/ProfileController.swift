@@ -14,10 +14,23 @@ private let headerReuseIdentifier = "ProfileHeader"
 class ProfileController:UICollectionViewController {
     //MAKR: - Properties
     
+    private let user: User
     //MAKR: - Lifecycle
+   
+    init(user:User) {
+        self.user = user
+        super.init(collectionViewLayout: UICollectionViewFlowLayout())
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
+       
        
     }
     
@@ -51,7 +64,10 @@ extension ProfileController {
 //MARK: - UICollectionViewDelegate
 extension ProfileController {
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerReuseIdentifier, for: indexPath)
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerReuseIdentifier, for: indexPath) as! ProfileHeader
+        
+        header.delegate = self
+        header.user = user
         return header
     }
 }
@@ -69,4 +85,13 @@ extension ProfileController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: 120)
     }
+}
+
+//MARK: - ProfileHeaderDelegate
+extension ProfileController : ProfileHeaderDelegate {
+    func handleDismissal() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
 }
