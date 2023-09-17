@@ -23,6 +23,7 @@ class CaptionTextView:UITextView {
         
         backgroundColor = .white
         font = UIFont.systemFont(ofSize: 16)
+        textColor = .black
         isScrollEnabled = false
         heightAnchor.constraint(equalToConstant: 300).isActive = true
         

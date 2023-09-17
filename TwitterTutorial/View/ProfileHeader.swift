@@ -63,7 +63,6 @@ class ProfileHeader: UICollectionReusableView {
     private let fullnameLabel:UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 20)
-        label.text = "Lee Ji Eun"
         label.textColor = .black
         return label
     }()
@@ -72,7 +71,6 @@ class ProfileHeader: UICollectionReusableView {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
         label.textColor = .lightGray
-        label.text = "@IU"
         return label
     }()
     
@@ -169,6 +167,8 @@ class ProfileHeader: UICollectionReusableView {
         followersLabel.attributedText = viewModel.followersString
         editProfileFollowButton.setTitle(viewModel.actionButtonTitle, for: .normal)
         
+        fullnameLabel.text = user.fullname
+        usernameLabel.text = viewModel.usernameText
     }
     
     
