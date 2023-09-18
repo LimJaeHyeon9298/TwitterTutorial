@@ -46,6 +46,7 @@
 		4697387B2AB8642F00E5A739 /* ActionSheetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4697387A2AB8642F00E5A739 /* ActionSheetCell.swift */; };
 		4697387D2AB86A3200E5A739 /* ActionSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4697387C2AB86A3100E5A739 /* ActionSheetViewModel.swift */; };
 		4697387F2AB8B3AA00E5A739 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4697387E2AB8B3AA00E5A739 /* Notification.swift */; };
+		469738812AB8B66700E5A739 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469738802AB8B66700E5A739 /* NotificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		4697387A2AB8642F00E5A739 /* ActionSheetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetCell.swift; sourceTree = "<group>"; };
 		4697387C2AB86A3100E5A739 /* ActionSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetViewModel.swift; sourceTree = "<group>"; };
 		4697387E2AB8B3AA00E5A739 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		469738802AB8B66700E5A739 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		659914BFBEFC57BD0821E5D4 /* Pods_TwitterTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5CF6CDE9EC5F89997F8507 /* Pods-TwitterTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterTutorial.debug.xcconfig"; path = "Target Support Files/Pods-TwitterTutorial/Pods-TwitterTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		E051A5BCBED8521CABFBD8EA /* Pods-TwitterTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterTutorial.release.xcconfig"; path = "Target Support Files/Pods-TwitterTutorial/Pods-TwitterTutorial.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				4680EFD22AB4F3F80035881B /* AuthService.swift */,
 				4680EFD42AB5096E0035881B /* UserService.swift */,
 				4680EFDC2AB545080035881B /* TweetService.swift */,
+				469738802AB8B66700E5A739 /* NotificationService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				4680EFD72AB50C3C0035881B /* User.swift in Sources */,
 				4680EFC02AB46BB20035881B /* ExploreController.swift in Sources */,
 				4680EFA22AB4692B0035881B /* SceneDelegate.swift in Sources */,
+				469738812AB8B66700E5A739 /* NotificationService.swift in Sources */,
 				4680EFBC2AB46A080035881B /* MainTabController.swift in Sources */,
 				469738752AB74FF800E5A739 /* TweetHeader.swift in Sources */,
 				4680EFE32AB58F110035881B /* TweetViewModel.swift in Sources */,
