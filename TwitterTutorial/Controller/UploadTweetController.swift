@@ -7,9 +7,12 @@
 
 import UIKit
 
+
 class UploadTweetController: UIViewController {
     //MARK: - Properties
     private let user: User
+    private let config: UploadTweetConfiguartion
+    private lazy var viewModel = UploadTweetViewModel(config: config)
    
     private lazy var actionButton:UIButton = {
         let button = UIButton(type: .system)
@@ -37,8 +40,9 @@ class UploadTweetController: UIViewController {
     private let captionTextView = CaptionTextView()
     
     //MARK: - Lifecycle
-    init(user:User) {
+    init(user:User,config: UploadTweetConfiguartion) {
         self.user = user
+        self.config = config
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -49,6 +53,12 @@ class UploadTweetController: UIViewController {
         super.viewDidLoad()
         configureUI()
        
+        switch config {
+        case .tweet:
+            print("tweet")
+        case .reply(let tweet) :
+            print("replying\(tweet.caption)")
+        }
         
     }
     
