@@ -77,6 +77,13 @@ class TweetHeader: UICollectionReusableView {
         button.addTarget(self, action: #selector(showActionSheet), for: .touchUpInside)
         return button
     }()
+   
+    private let replyLabel: UILabel = {
+       let label = UILabel()
+        label.textColor = .lightGray
+        label.font = UIFont.systemFont(ofSize: 12)
+        return label
+    }()
     
     private lazy var retweetsLabel: UILabel = {
         let label = UILabel()
@@ -146,8 +153,13 @@ class TweetHeader: UICollectionReusableView {
         labelStack.axis = .vertical
         labelStack.spacing = -6
         
-        let stack = UIStackView(arrangedSubviews: [profileImageVIew,labelStack])
-        stack.spacing = 12
+        let imageCaptionStack = UIStackView(arrangedSubviews: [profileImageVIew,labelStack])
+        imageCaptionStack.spacing = 12
+        
+        let stack = UIStackView(arrangedSubviews: [replyLabel,imageCaptionStack])
+        stack.axis = .vertical
+        stack.spacing = 8
+        stack.distribution = .fillProportionally
         
         addSubview(stack)
         stack.anchor(top: topAnchor,left: leftAnchor,paddingTop: 16,paddingLeft: 16)
@@ -213,9 +225,13 @@ class TweetHeader: UICollectionReusableView {
         profileImageVIew.sd_setImage(with: viewModel.profileImageUrl)
         dateLabel.text = viewModel.headerTimestamp
         retweetsLabel.attributedText = viewModel.retweetsAttributedString
+        
         likesLabel.attributedText = viewModel.retweetsAttributedString
         likeButton.setImage(viewModel.likeButtonImage, for: .normal)
         likeButton.tintColor = viewModel.likeButtonTintColor
+       
+        replyLabel.isHidden = viewModel.shouldHideReplyLabel
+        replyLabel.text = viewModel.replyText
     }
     
     
