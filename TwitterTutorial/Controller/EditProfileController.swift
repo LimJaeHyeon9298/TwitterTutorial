@@ -11,12 +11,14 @@ private let reuseIdentifier = "EditProfileCell"
 
 protocol EditProfileControllerDelegate:AnyObject {
     func controller(_ controller: EditProfileController,wantsToupdate user: User)
+    func handleLogout()
 }
 
 class EditProfileController: UITableViewController {
     //MARK: - Properties
     private var user: User
     private lazy var headerView = EditProfileHeader(user: user)
+    private let footerView = EditProfileFooter()
     private let imagePicker = UIImagePickerController()
     private var userInfoChanged = false
     weak var delegate: EditProfileControllerDelegate?
@@ -121,7 +123,9 @@ class EditProfileController: UITableViewController {
     func configureTableView() {
         tableView.tableHeaderView = headerView
         headerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 180)
-        tableView.tableFooterView = UIView()
+        footerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 100)
+        tableView.tableFooterView = footerView
+        footerView.delegate = self
         headerView.delegate = self
         tableView.register(EditProfileCell.self, forCellReuseIdentifier: reuseIdentifier)
         view.backgroundColor = .white
@@ -202,4 +206,21 @@ extension EditProfileController: EditProfileCellDelegate {
     }
     
     
+}
+//MARK: - EditProfileFooterDelegate
+extension EditProfileController: EditProfileFooterDelegate {
+    func handleLogout() {
+        
+        let alert = UIAlertController(title: nil, message: "진짜로 로그아웃 하시겠습니까?", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Logout", style: .destructive,handler: { _ in
+            self.dismiss(animated: true) {
+                self.delegate?.handleLogout()
+            }
+            
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel,handler: nil))
+        self.present(alert, animated: true)
+        
+    }
 }

@@ -53,6 +53,7 @@
 		4697388A2ABB4CD200E5A739 /* EditProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469738892ABB4CD200E5A739 /* EditProfileHeader.swift */; };
 		4697388C2ABB688700E5A739 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4697388B2ABB688700E5A739 /* EditProfileViewModel.swift */; };
 		4697388E2ABB690600E5A739 /* EditProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4697388D2ABB690600E5A739 /* EditProfileCell.swift */; };
+		469738902ABC75CE00E5A739 /* EditProfileFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4697388F2ABC75CE00E5A739 /* EditProfileFooter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +104,7 @@
 		469738892ABB4CD200E5A739 /* EditProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileHeader.swift; sourceTree = "<group>"; };
 		4697388B2ABB688700E5A739 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		4697388D2ABB690600E5A739 /* EditProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileCell.swift; sourceTree = "<group>"; };
+		4697388F2ABC75CE00E5A739 /* EditProfileFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileFooter.swift; sourceTree = "<group>"; };
 		659914BFBEFC57BD0821E5D4 /* Pods_TwitterTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5CF6CDE9EC5F89997F8507 /* Pods-TwitterTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterTutorial.debug.xcconfig"; path = "Target Support Files/Pods-TwitterTutorial/Pods-TwitterTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		E051A5BCBED8521CABFBD8EA /* Pods-TwitterTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterTutorial.release.xcconfig"; path = "Target Support Files/Pods-TwitterTutorial/Pods-TwitterTutorial.release.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				4680EFEA2AB5C81E0035881B /* ProfileFilterCell.swift */,
 				469738892ABB4CD200E5A739 /* EditProfileHeader.swift */,
 				4697388D2ABB690600E5A739 /* EditProfileCell.swift */,
+				4697388F2ABC75CE00E5A739 /* EditProfileFooter.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				4697387D2AB86A3200E5A739 /* ActionSheetViewModel.swift in Sources */,
 				469738832AB8C63800E5A739 /* NotificationCell.swift in Sources */,
 				4697388C2ABB688700E5A739 /* EditProfileViewModel.swift in Sources */,
+				469738902ABC75CE00E5A739 /* EditProfileFooter.swift in Sources */,
 				4680EFCB2AB47B430035881B /* RegistrationController.swift in Sources */,
 				4680EFBE2AB46B6C0035881B /* FeedController.swift in Sources */,
 				4680EFD12AB4EE680035881B /* Constants.swift in Sources */,
