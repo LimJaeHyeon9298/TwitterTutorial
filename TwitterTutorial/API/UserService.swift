@@ -75,8 +75,39 @@ struct UserService {
             
         }
     }
+    func updateProfileImage(image:UIImage,completion: @escaping(URL?)->Void) {
+        guard let imageData = image.jpegData(compressionQuality: 0.3) else {return}
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        let filename = NSUUID().uuidString
+        let ref = STORAGE_PROFILE_IMAGE.child(filename)
+        
+        ref.putData(imageData) { meta, error in
+            ref.downloadURL { url, error in
+                guard let profileImageUrl = url?.absoluteString else {return}
+                let values = ["profileImageUrl":profileImageUrl]
+                REF_USERS.child(uid).updateChildValues(values) { error, ref in
+                    completion(url)
+                }
+            }
+        }
+    }
     
     
     
+    func saveUserData(user:User,completion:@escaping(DatabaseCompletion)) {
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        
+        let values = ["fullname":user.fullname,"username":user.username,"bio":user.bio ?? ""]
+        
+        REF_USERS.child(uid).updateChildValues(values, withCompletionBlock: completion)
+    }
+    
+    func fetchUser(withUsername username:String,completion:@escaping(User)->Void) {
+        REF_USER_USERNAMES.child(username).observeSingleEvent(of: .value) { snapshot in
+            guard let uid = snapshot.value as? String else {return}
+            self.fetchUser(uid: uid, completion: completion)
+        
+        }
+    }
     
 }

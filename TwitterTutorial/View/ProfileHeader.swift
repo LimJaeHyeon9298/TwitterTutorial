@@ -92,7 +92,7 @@ class ProfileHeader: UICollectionReusableView {
        let followTap = UITapGestureRecognizer(target: self, action: #selector(handleFollowersTapped))
         label.isUserInteractionEnabled = true
         label.addGestureRecognizer(followTap)
-        label.text = "0 Following"
+       // label.text = "0 Following"
         label.textColor = .black
         return label
      }()
@@ -102,7 +102,7 @@ class ProfileHeader: UICollectionReusableView {
        let followTap = UITapGestureRecognizer(target: self, action: #selector(handleFollowingTapped))
         label.isUserInteractionEnabled = true
         label.addGestureRecognizer(followTap)
-        label.text = "0 Followers"
+       // label.text = "0 Followers"
         label.textColor = .black
         return label
      }()

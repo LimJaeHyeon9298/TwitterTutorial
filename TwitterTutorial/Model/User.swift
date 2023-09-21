@@ -9,13 +9,14 @@ import Foundation
 import Firebase
 
 struct User {
-    let fullname:String
+    var fullname:String
     let email:String
-    let username:String
+    var username:String
     var profileImageUrl : URL?
     let uid : String
     var isFollowed = false
     var stats: UserRelationStats?
+    var bio:String?
     
     var isCurrentUser:Bool {
         return Auth.auth().currentUser?.uid == uid
@@ -27,6 +28,7 @@ struct User {
         self.email = dictionary["email"] as? String ?? ""
         self.fullname = dictionary["fullname"] as? String ?? ""
         self.username = dictionary["username"] as? String ?? ""
+        self.bio = dictionary["bio"] as? String ?? ""
         if let profileURLString = dictionary["profileImage"] as? String {
             guard let url = URL(string: profileURLString) else {return}
             self.profileImageUrl = url
